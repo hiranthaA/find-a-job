@@ -3,7 +3,9 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  /* height: 40vmin; */
+  width:300px;
+  cursor: pointer;
 }
 
 .App-header {
@@ -15,8 +17,35 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding-right: 0 !important;
+  padding-left:0 !important;
 }
 
 .App-link {
   color: #09d3ac;
+}
+
+.content{
+  background-color: #282c34;
+  padding-right: 0 !important;
+  padding-left:0 !important;
+  
+}
+.intro{
+  background-color: #282c34;
+  padding-right: 0 !important;
+  padding-left:0 !important;
+}
+
+.row{
+  
+  margin-right: 0px;
+  margin-left: 0px;
+
+}
+
+.content-fonts-normal{
+  text-align: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
