@@ -49,3 +49,22 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+.content-info-normal{
+  text-align: left;
+  font-size: calc(5px + 2vmin);
+  color: white;
+}
+
+.profile-pic-card{
+  width : 50%;
+  display: inline-block;
+}
+
+.padding-10-left{
+  padding-left: 10px;
+}
+
+.home-img{
+  width : 70%;
+}
