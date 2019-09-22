@@ -1,0 +1,31 @@
+{
+  "name": "cors-escape",
+  "description": "CORS Escape is a reverse proxy which adds CORS headers to the proxied request. Request URL is taken from the path",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shalvah/cors-escape.git"
+  },
+  "main": "server.js",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "http-proxy": "^1.17.0",
+    "proxy-from-env": "^1.0.0"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.3",
+    "istanbul": "^0.4.2",
+    "lolex": "^4.0.1",
+    "mocha": "^6.1.4",
+    "nock": "^10.0.6",
+    "supertest": "^4.0.2"
+  },
+  "scripts": {
+    "test": "mocha ./test/test*.js --reporter spec",
+    "test-coverage": "istanbul cover ./node_modules/.bin/_mocha -- test/test.js test/test-ratelimit.js --reporter spec"
+  },
+  "engines": {
+    "node": ">=8.10.0",
+    "npm": ">=6.1.0"
+  }
+}
