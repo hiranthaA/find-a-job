@@ -1,4 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This simple web application is implemented using ReactJS.
+
+Due to 
+
+Cors-escape
 
 ## Available Scripts
 
