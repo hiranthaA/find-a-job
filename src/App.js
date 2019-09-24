@@ -47,7 +47,7 @@ class App extends Component {
   requestToken(authcode,redirecturi){
     this.setState({submitStatus:"loading"});
 
-    var url = "http://localhost:8080/https://www.linkedin.com/oauth/v2/accessToken?grant_type=authorization_code&code="+authcode+"&redirect_uri="+redirecturi+"&client_id=81uv5q50q6h4va&client_secret=peuX5PsUcpv3nFYJ";
+    var url = "http://localhost:2000/https://www.linkedin.com/oauth/v2/accessToken?grant_type=authorization_code&code="+authcode+"&redirect_uri="+redirecturi+"&client_id=81uv5q50q6h4va&client_secret=peuX5PsUcpv3nFYJ";
 
     var headers = {
       'Access-Control-Allow-Origin': '*',
@@ -67,7 +67,7 @@ class App extends Component {
 
   requestInfo(token){
 
-    var url = "http://localhost:8080/https://api.linkedin.com/v2/me?projection=(id,firstName,lastName,profilePicture(displayImage~:playableStreams))";
+    var url = "http://localhost:2000/https://api.linkedin.com/v2/me?projection=(id,firstName,lastName,profilePicture(displayImage~:playableStreams))";
 
     axios.get(url,{ headers: { Authorization: 'Bearer '+token } }).then(function (response) {
 
@@ -80,7 +80,7 @@ class App extends Component {
 
   requestEmail(token){
 
-    var url = "http://localhost:8080/https://api.linkedin.com/v2/emailAddress?q=members&projection=(elements*(handle~))";
+    var url = "http://localhost:2000/https://api.linkedin.com/v2/emailAddress?q=members&projection=(elements*(handle~))";
 
     axios.get(url,{ headers: { Authorization: 'Bearer '+token } }).then(function (response) {
             return response.data;
