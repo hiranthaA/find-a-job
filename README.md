@@ -16,4 +16,8 @@ This is a backend proxy server which will be running on port 2000.
  2) run command `npm install` to install the dependancies.
  3) run command `node server.js` to start the proxy server.
  
+ #### Why a proxy server
+ LinkedIn does not support CORS (Cross Platform Resource Sharing) anymore. So even though we pass relevent headers with the request, browser will still block them and throws cors errors. A workaround for this is to use a proxy server and pass the request to the server, and then it will request from LinkedIn and pass the response back.
+There are many such servers out there already implemented. Here I have used [cors-escape](https://github.com/shalvah/cors-escape).
+ 
 ## You are now fully setup. 
